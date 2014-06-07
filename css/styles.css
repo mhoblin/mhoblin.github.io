@@ -5,6 +5,14 @@ body {
   text-align: center;
 }
 
+p {
+  max-width: 40em;
+}
+
+.container {
+  width: 98%;
+  margin: 0 auto;
+}
 
 h1 {
   text-align: center;
@@ -31,12 +39,6 @@ body div img[src*="logo"] {
   color: rgba(255, 255, 255, 0.8);
 }
 
-
-
-
-/*
-	Theme controls how everything looks in Gallery CSS.
-*/
 .gallery {
   position: relative;
 }
