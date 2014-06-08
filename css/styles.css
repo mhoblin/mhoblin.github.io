@@ -1,36 +1,54 @@
 /* Your Website Styles */
 
-body {
-  background: url("../img/crossword.png");
-  text-align: left;
-  font size: 100%;
-}
-
-p {
-  max-width: 40em;
-  text-align: left;
-}
-
 .container {
   width: 98%;
   margin: 0 auto;
 }
+
+body {
+  background: url("../img/crossword.png");
+  font size: 100%;
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+}
+
+
+div,
+div p { 
+  display: inline-block;
+  max-width: 37em;
+}
+
 
 h1 {
   color: #3FBAB9;
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  float: center;
 }
 
-h2 {
-
+div header img[src*="logo-little"] {
+  width: 80px;
+  max-width: 25em;
+  /*background: red;*/
 }
 
 div header img[src*="logo"] {
-  width: 8em;
+  width: 100%;
+  max-width: 25em;
   /*background: red;*/
-  float: left;
+  float: center;
+}
+
+nav a {
+  margin: 1em .5em 2em .5em;
+  padding: .6em;
+}
+
+nav a:hover {
+  border: #646464 dotted .18em;
+  border-radius: 2em;
 }
 
 a {
@@ -39,13 +57,81 @@ a {
   text-transform: uppercase;
 }
 
-a:hover {
-  border-bottom:;
+
+/*========
+Style Tile
+=========*/
+
+section {
+  margin: 20px 20px;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+.color-1,
+.color-2,
+.color-3,
+.pattern-1,
+.pattern-2,
+.pattern-3 {
+  border: 1px solid #000;
+  float: left;
+  margin: .625em .625em;
+  height: 50px;
+  width: 50px;
+}
+
+.color-1,
+.pattern-1 {
+  margin-left: 38px;
+}
+
+.color-1 {
+  background: #B5EBEB;
+}
+
+.color-2 {
+  background: #3FBAB9;
+}
+
+.color-3 {
+  background: #646464;
+}
+
+.pattern-1 {
+  background: url("../img/style-tile/crossword.png") no-repeat;
+}
+
+.pattern-2 {
+  background: url("../img/style-tile/wild_flowers.png") no-repeat;
+}
+
+.pattern-3 {
+  background: url("../img/style-tile/dark.png") no-repeat;
+}
+
+/*===========
+Resume Stying
+============*/
+
+a > img {
+  max-width: 3em;
+  height: 3em;
+  margin: .6em;
+  opacity: .8;
 }
 
 
 
-/* Gallery Stying */
+
+
+
+/*=============
+Gallery Stying
+==============*/
 
 
 .gallery .control-button {
@@ -114,75 +200,49 @@ a:hover {
 Media query
 ==========*/
 
+
+
   /*  Large Desktop  */
 
  @media screen and (max-width: 1300px) {
   body {
 
-    /* background: lightyellow; */
-  }
+    }
 
-  article img {
-    width: 75%;
-    max-width: 75%;
-    transition: width .5s;
+
   }
- }
 
 
  /*  Desktop  */
 
  @media screen and (max-width: 1000px) {
   body {
-    /* background: lightpink; */
+    }
+
+
   }
- }
 
   /*  Tablet styling */
 
  @media screen and (max-width: 768px) {
   body {
-    /* background: lightgreen;*/
-  }
 
-  article section {
-    width: 50%;
-    transition: width .5s;
-  }
- }
+    }
+
+
+}
+
+
 
    /*  Mobile styling  */
 
  @media screen and (max-width: 480px) {
   body {
-    background: lightblue;
-  }
 
-  section {
-    width: 100%;
-    text-align: center;
-    transition: width .5s;
-  }
-
-  section img {
-    width: 50%;
-    max-width: 50%;
-  }
-
-  nav li {
-    float: none;
-    margin: .5em;
-  }
-
-  img {
-    position: relative;
-    top: 0;
-    right: 0;
-  }
- }
+    }
 
 
-
+}
 
 
 
