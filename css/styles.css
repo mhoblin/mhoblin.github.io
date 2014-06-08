@@ -1,12 +1,14 @@
 /* Your Website Styles */
 
 body {
-  background: url("../img/dark.png");
-  text-align: center;
+  background: url("../img/crossword.png");
+  text-align: left;
+  font size: 100%;
 }
 
 p {
   max-width: 40em;
+  text-align: left;
 }
 
 .container {
@@ -15,16 +17,33 @@ p {
 }
 
 h1 {
-  text-align: center;
   color: #3FBAB9;
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-body div img[src*="logo"] {
-  width: 8em;
+h2 {
+
 }
+
+div header img[src*="logo"] {
+  width: 8em;
+  /*background: red;*/
+  float: left;
+}
+
+a {
+  color: #3FBAB9;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  border-bottom:;
+}
+
+
 
 /* Gallery Stying */
 
@@ -86,3 +105,84 @@ body div img[src*="logo"] {
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
 }
+
+
+
+
+
+/*==========
+Media query
+==========*/
+
+  /*  Large Desktop  */
+
+ @media screen and (max-width: 1300px) {
+  body {
+
+    /* background: lightyellow; */
+  }
+
+  article img {
+    width: 75%;
+    max-width: 75%;
+    transition: width .5s;
+  }
+ }
+
+
+ /*  Desktop  */
+
+ @media screen and (max-width: 1000px) {
+  body {
+    /* background: lightpink; */
+  }
+ }
+
+  /*  Tablet styling */
+
+ @media screen and (max-width: 768px) {
+  body {
+    /* background: lightgreen;*/
+  }
+
+  article section {
+    width: 50%;
+    transition: width .5s;
+  }
+ }
+
+   /*  Mobile styling  */
+
+ @media screen and (max-width: 480px) {
+  body {
+    background: lightblue;
+  }
+
+  section {
+    width: 100%;
+    text-align: center;
+    transition: width .5s;
+  }
+
+  section img {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  nav li {
+    float: none;
+    margin: .5em;
+  }
+
+  img {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+ }
+
+
+
+
+
+
