@@ -362,10 +362,16 @@ Media query
     }
 
     nav a {
-  margin: 1em .2em 2em .2em;
-  background-size: 2em 2em;
-  padding: .6em;
+      margin: 1em .2em 2em .2em;
+      background-size: 2em 2em;
+      padding: .6em;
     }
+
+    section img[src*="me"] {
+      width: 40%;
+      height: 40%;
+    }
+
 
   }
 
