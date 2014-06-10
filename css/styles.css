@@ -28,11 +28,7 @@ h1 {
   float: center;
 }
 
-div header img[src*="logo-little"] {
-  width: 80px;
-  max-width: 25em;
-  /*background: red;*/
-}
+
 
 div header img[src*="logo"] {
   width: 100%;
@@ -43,6 +39,7 @@ div header img[src*="logo"] {
 
 nav a {
   margin: 1em .5em 2em .5em;
+  background-size: 2em 2em;
   padding: .6em;
 }
 
@@ -124,7 +121,12 @@ a > img {
   opacity: .8;
 }
 
-
+header.small-logo {
+  width: 30%;
+  max-width: 9em;
+  top: 0;
+  left: 0;
+}
 
 
 
@@ -237,8 +239,9 @@ Media query
    /*  Mobile styling  */
 
  @media screen and (max-width: 480px) {
-  body {
 
+    header.small-logo {
+      position: center;
     }
 
 
