@@ -1,4 +1,29 @@
-/* Your Website Styles */
+
+
+
+
+
+
+
+
+/* ========
+My sources: 
+  - http://css-tricks.com/almanac/properties/d/display/
+  - gallery button hover: http://codepen.io/anon/pen/ypmAj
+  - z-index: http://css-tricks.com/almanac/properties/z/z-index/;
+  - centering image in portfolio for media query: http://www.sitepoint.com/css3-responsive-centered-image/
+  - Colin Manikoth's codepens used for class (Spring 2014)
+==========*/
+
+
+
+
+
+
+
+
+
+
 
 .container {
   width: 98%;
@@ -229,14 +254,6 @@ Gallery Stying
   width: 100px;  
 }
 
-
-
-/*sources: 
-  - http://css-tricks.com/almanac/properties/d/display/
-  - gallery button hover: http://codepen.io/anon/pen/ypmAj
-  - z-index: http://css-tricks.com/almanac/properties/z/z-index/;
-  - centering image in portfolio for media query: http://www.sitepoint.com/css3-responsive-centered-image/
-*/
 
 
 
