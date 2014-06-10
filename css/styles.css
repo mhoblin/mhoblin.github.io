@@ -168,26 +168,73 @@ Gallery Stying
 .gallery .controls img,
 .gallery .controls img {
   transition: .25s;
+  position: relative;
+}
+
+.gallery .controls .control-button {
+  width: 100px;
+  height: 100px;
+  background: #3FBAB9;
+
+  transition: .25s;
+}
+
+.gallery .controls .control-button:hover,
+.gallery .controls .control-button:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+    z-index: 999;
 }
 
 
 .gallery .controls img:hover,
 .gallery .controls img:active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    opacity: .1;
+    z-index: 999;
 }
 
-.gallery .controls img {
-  
-}
 
 .gallery .control-button {
   display: inline-block;
   margin: 0 .02em;
-  font-size: 3em;
+  font-size: 2.8em;
   text-align: center;
   text-decoration: none;
 }
+
+.gallery .controls .control-button p {
+  position: absolute;
+  font-size: .22em;
+  padding: 1em;
+  display: none;
+  text-align: center;
+  top: 20px;
+  color: black;
+  width: 84px;
+
+  transition: .25s;
+}
+
+.gallery .controls .control-button:hover p,
+.gallery .controls .control-button:active p {
+      -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+  position: absolute;
+  display: inline;
+  width: 100px;
+  margin-left: -.5em;
+  
+}
+
+
+
+/*sources: 
+  - http://css-tricks.com/almanac/properties/d/display/
+  - gallery button hover: http://codepen.io/anon/pen/ypmAj
+*/
+
 
 
 
