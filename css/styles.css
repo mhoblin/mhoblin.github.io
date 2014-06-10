@@ -13,10 +13,15 @@ body {
 }
 
 
-div,
+div#tiles,
 div p { 
   display: inline-block;
   max-width: 37em;
+}
+
+
+div {
+  max-width: 70em;
 }
 
 
@@ -29,13 +34,18 @@ h1 {
 }
 
 
-
 div header img[src*="logo"] {
   width: 100%;
   max-width: 25em;
   /*background: red;*/
   float: center;
 }
+
+
+/*========
+Navigation
+=========*/
+
 
 nav a {
   margin: 1em .5em 2em .5em;
@@ -54,6 +64,11 @@ a {
   text-transform: uppercase;
 }
 
+section img[src*="me"] {
+  width: 50%;
+  height: 50%;
+}
+
 
 /*========
 Style Tile
@@ -63,10 +78,6 @@ section {
   margin: 20px 20px;
 }
 
-img {
-  width: 50%;
-  height: 50%;
-}
 
 .color-1,
 .color-2,
@@ -114,7 +125,7 @@ img {
 Resume Stying
 ============*/
 
-a > img {
+footer > a > img[src*="resume"] {
   max-width: 3em;
   height: 3em;
   margin: .6em;
@@ -135,20 +146,11 @@ header.small-logo {
 Gallery Stying
 ==============*/
 
-
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.gallery .control-button:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .gallery {
   position: relative;
+  margin-bottom: 9em;
 }
+
 .gallery .item {
   height: 400px;
   overflow: hidden;
@@ -158,10 +160,11 @@ Gallery Stying
 
 .gallery .controls {
   position: absolute;
-  bottom: -120px;
+  bottom: -8.1em;
   width: 100%;
   text-align: center;
 }
+
 .gallery .controls img,
 .gallery .controls img {
   transition: .25s;
@@ -184,7 +187,6 @@ Gallery Stying
   font-size: 3em;
   text-align: center;
   text-decoration: none;
-  transition: color .1s;
 }
 
 
@@ -211,6 +213,13 @@ Media query
 
     }
 
+    div#tiles {
+      position: relative;
+    }
+
+    div#tiles { 
+      max-width: 19em;
+    }
 
   }
 
@@ -243,6 +252,10 @@ Media query
     header.small-logo {
       position: center;
     }
+
+
+
+
 
 
 }
