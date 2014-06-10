@@ -155,6 +155,7 @@ Gallery Stying
   height: 400px;
   overflow: hidden;
   text-align: center;
+
 }
 
 
@@ -163,6 +164,8 @@ Gallery Stying
   bottom: -8.1em;
   width: 100%;
   text-align: center;
+
+
 }
 
 .gallery .controls img,
@@ -175,7 +178,7 @@ Gallery Stying
   width: 100px;
   height: 100px;
   background: #3FBAB9;
-
+  position: relative;
   transition: .25s;
 }
 
@@ -191,7 +194,6 @@ Gallery Stying
 .gallery .controls img:hover,
 .gallery .controls img:active {
     opacity: .1;
-    z-index: 999;
 }
 
 
@@ -212,6 +214,7 @@ Gallery Stying
   top: 20px;
   color: black;
   width: 84px;
+  margin-left: -1em;
 
   transition: .25s;
 }
@@ -223,9 +226,7 @@ Gallery Stying
 
   position: absolute;
   display: inline;
-  width: 100px;
-  margin-left: -.5em;
-  
+  width: 100px;  
 }
 
 
@@ -233,6 +234,7 @@ Gallery Stying
 /*sources: 
   - http://css-tricks.com/almanac/properties/d/display/
   - gallery button hover: http://codepen.io/anon/pen/ypmAj
+  - z-index: http://css-tricks.com/almanac/properties/z/z-index/;
 */
 
 
@@ -282,9 +284,17 @@ Media query
 
   /*  Tablet styling */
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) (min-width: 536px) {
   body {
 
+    }
+    .gallery {
+      margin-bottom: 14em;
+    }
+
+    body .gallery .controls {
+      bottom: -13.5em;
+      width: 100%;
     }
 
 
@@ -294,15 +304,20 @@ Media query
 
    /*  Mobile styling  */
 
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 537px) {
 
     header.small-logo {
       position: center;
     }
 
+    .gallery {
+      margin-bottom: 14em;
+    }
 
-
-
+        body .gallery .controls {
+      bottom: -13.5em;
+      width: 100%;
+    }
 
 
 }
