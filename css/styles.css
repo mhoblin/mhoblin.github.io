@@ -91,7 +91,6 @@ a {
 
 section img[src*="me"] {
   width: 50%;
-  height: 50%;
 }
 
 
@@ -367,10 +366,6 @@ Media query
       padding: .6em;
     }
 
-    section img[src*="me"] {
-      width: 40%;
-      height: 40%;
-    }
 
 
   }
