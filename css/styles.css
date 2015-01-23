@@ -1,29 +1,4 @@
-
-
-
-
-
-
-
-
-/* ========
-My sources: 
-  - http://css-tricks.com/almanac/properties/d/display/
-  - gallery button hover: http://codepen.io/anon/pen/ypmAj
-  - z-index: http://css-tricks.com/almanac/properties/z/z-index/;
-  - centering image in portfolio for media query: http://www.sitepoint.com/css3-responsive-centered-image/
-  - Colin Manikoth's codepens used for class (Spring 2014)
-==========*/
-
-
-
-
-
-
-
-
-
-
+/* Your Website Styles */
 
 .container {
   width: 98%;
@@ -38,15 +13,10 @@ body {
 }
 
 
-div#tiles,
+div,
 div p { 
   display: inline-block;
   max-width: 37em;
-}
-
-
-div {
-  max-width: 70em;
 }
 
 
@@ -59,18 +29,13 @@ h1 {
 }
 
 
+
 div header img[src*="logo"] {
   width: 100%;
   max-width: 25em;
   /*background: red;*/
   float: center;
 }
-
-
-/*========
-Navigation
-=========*/
-
 
 nav a {
   margin: 1em .5em 2em .5em;
@@ -89,10 +54,6 @@ a {
   text-transform: uppercase;
 }
 
-section img[src*="me"] {
-  width: 50%;
-}
-
 
 /*========
 Style Tile
@@ -102,6 +63,10 @@ section {
   margin: 20px 20px;
 }
 
+img {
+  width: 50%;
+  height: 50%;
+}
 
 .color-1,
 .color-2,
@@ -111,7 +76,7 @@ section {
 .pattern-3 {
   border: 1px solid #000;
   float: left;
-  margin: .5em .7em .5em .7em;
+  margin: .625em .625em;
   height: 50px;
   width: 50px;
 }
@@ -149,7 +114,7 @@ section {
 Resume Stying
 ============*/
 
-footer > a > img[src*="resume"] {
+a > img {
   max-width: 3em;
   height: 3em;
   margin: .6em;
@@ -170,87 +135,57 @@ header.small-logo {
 Gallery Stying
 ==============*/
 
-.gallery {
-  position: relative;
-  margin-bottom: 9em;
+
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
 }
 
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery {
+  position: relative;
+}
 .gallery .item {
   height: 400px;
   overflow: hidden;
   text-align: center;
-
 }
 
 
 .gallery .controls {
   position: absolute;
-  bottom: -8.1em;
+  bottom: -120px;
   width: 100%;
   text-align: center;
-
-
 }
-
-
-.gallery .controls .control-button {
-  width: 100px;
-  height: 100px;
-  background: #3FBAB9;
-  position: relative;
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 2.8em;
-  text-align: center;
-  text-decoration: none;
-  transition: .25s;
-}
-
-.gallery .controls .control-button:hover,
-.gallery .controls .control-button:active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-
-    z-index: 999;
-}
-
-
+.gallery .controls img,
 .gallery .controls img {
   transition: .25s;
-  position: relative;
 }
+
 
 .gallery .controls img:hover,
 .gallery .controls img:active {
-    opacity: .1;
-}
-
-
-.gallery .controls .control-button p {
-  position: absolute;
-  font-size: .22em;
-  padding: 1em;
-  display: none;
-  text-align: center;
-  top: 20px;
-  color: black;
-  width: 84px;
-  margin-left: -1em;
-
-  transition: .25s;
-}
-
-.gallery .controls .control-button:hover p,
-.gallery .controls .control-button:active p {
-      -webkit-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
-
-  position: absolute;
-  display: inline;
-  width: 100px;  
 }
 
+.gallery .controls img {
+  
+}
 
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
 
 
 
@@ -276,11 +211,6 @@ Media query
 
     }
 
-    div#tiles {
-      position: relative;
-      max-width: 20em;
-    }
-
 
   }
 
@@ -296,30 +226,11 @@ Media query
 
   /*  Tablet styling */
 
- @media screen and (max-width: 768px) and (min-width: 536px) {
+ @media screen and (max-width: 768px) {
   body {
 
     }
 
-
-    body .gallery .controls {
-      bottom: -8em;
-      width: 100%;
-    }
-
-    .gallery {
-      margin-bottom: 9em;
-}
-
-    .gallery .item {
-      width: 200%;
-      left: -40%;
-      overflow: hidden;
-      position: absolute;
-    }
-  .gallery .item:first-of-type {
-  position: relative;
-}
 
 }
 
@@ -327,66 +238,14 @@ Media query
 
    /*  Mobile styling  */
 
- @media screen and (max-width: 537px) {
+ @media screen and (max-width: 480px) {
 
     header.small-logo {
       position: center;
     }
 
-    .gallery {
-      margin-bottom: 14em;
-    }
-
-    .gallery .item {
-      position: absolute;
-      width: 200%;
-      left: -70%;
-      overflow: hidden;
-    }
-
-    .gallery .item:first-of-type {
-       position: relative;
-      left: -100%;
-    }
-
-
-
-
-    nav a {
-      margin: 1em .2em 2em .2em;
-      background-size: 2em 2em;
-      padding: .6em;
-    }
-
-    div#tiles {
-      max-width: 19em;
-    }
-
-.color-1,
-.color-2,
-.color-3,
-.pattern-1,
-.pattern-2,
-.pattern-3 {
-  float: left;
-  margin: .5em .5em;
-  width: 40px;
-  height: 40px;
 
 }
-
-
-
- /* Gallery controls */
- 
-    body .gallery .controls {
-      bottom: -13.5em;
-      width: 100%;
-    }
-
-
-  }
-
 
 
 
