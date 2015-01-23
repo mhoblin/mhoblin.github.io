@@ -36,12 +36,17 @@ nav a {
   padding: .6em;
 }
 
+a:hover {
+    color: #646464;
+}
 
 nav a:hover {
-  border: #646464 dotted .18em;
+  background-color: #646464;
   border-radius: 2em;
-  color: #646464;
+  color: #FFF;
+
 }
+
 
 a,
 footer {
