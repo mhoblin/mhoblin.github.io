@@ -1,11 +1,11 @@
 $('i').addClass('big icon');
 
 $(window).resize(function(){
-	if ($(window).width() <= 800){	
-		$('header#corner img').addClass('hide');
-		$('header#large img').removeClass('hide')}
+	if ($(window).width() <= 800){
+		$('header#large img').removeClass('hide');
+		$('header#corner img').addClass('hide')}
 
-	else {$('header#large img').addClass('hide');
-			$('header#corner img').removeClass('hide')}
+	else {$('header#corner img').removeClass('hide');
+		$('header#large img').addClass('hide')}
 });
 
