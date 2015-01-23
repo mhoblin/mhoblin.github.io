@@ -1,23 +1,10 @@
 /* Your Website Styles */
 
-.container {
-  width: 98%;
-  margin: 0 auto;
-}
-
 body {
   background: url("../img/crossword.png");
   font size: 100%;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-}
-
-
-div,
-div p { 
-  display: inline-block;
-  max-width: 37em;
 }
 
 
@@ -26,6 +13,7 @@ h1 {
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 12em;
   float: center;
 }
 
@@ -38,9 +26,8 @@ h5 {
 
 div header img[src*="logo"] {
   width: 100%;
-  max-width: 25em;
+  max-width: 10em;
   /*background: red;*/
-  float: center;
 }
 
 nav a {
@@ -49,74 +36,43 @@ nav a {
   padding: .6em;
 }
 
+
 nav a:hover {
   border: #646464 dotted .18em;
   border-radius: 2em;
+  color: #646464;
 }
 
 a,
-footer p {
+footer {
   color: #3FBAB9;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  margin: 2em;
+}
+
+section img {
+  max-width: 580px;
+}
+
+.ui.image,
+.profile {
+  width: 100%;
+  min-width: 278px;
+  max-width: 580px;
 }
 
 
 
-/*========
-Style Tile
-=========*/
-
-section {
-  margin: 20px 20px;
+header.column.row img {
+  width: 100%;
+  min-width: 150px;
+  max-width: 278px;
 }
 
-img {
-  width: 50%;
-  height: 50%;
-}
 
-.color-1,
-.color-2,
-.color-3,
-.pattern-1,
-.pattern-2,
-.pattern-3 {
-  border: 1px solid #000;
-  float: left;
-  margin: .625em .625em;
-  height: 50px;
-  width: 50px;
-}
 
-.color-1,
-.pattern-1 {
-  margin-left: 38px;
-}
-
-.color-1 {
-  background: #B5EBEB;
-}
-
-.color-2 {
-  background: #3FBAB9;
-}
-
-.color-3 {
-  background: #646464;
-}
-
-.pattern-1 {
-  background: url("../img/style-tile/crossword.png") no-repeat;
-}
-
-.pattern-2 {
-  background: url("../img/style-tile/wild_flowers.png") no-repeat;
-}
-
-.pattern-3 {
-  background: url("../img/style-tile/dark.png") no-repeat;
-}
 
 /*===========
 Resume Stying
@@ -138,63 +94,6 @@ Gallery Stying
 ==============*/
 
 
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.gallery .control-button:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.gallery {
-  position: relative;
-}
-.gallery .item {
-  height: 400px;
-  overflow: hidden;
-  text-align: center;
-}
-
-
-.gallery .controls {
-  position: absolute;
-  bottom: -120px;
-  width: 100%;
-  text-align: center;
-}
-.gallery .controls img,
-.gallery .controls img {
-  transition: .25s;
-}
-
-
-.gallery .controls img:hover,
-.gallery .controls img:active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.gallery .controls img {
-  
-}
-
-.gallery .control-button {
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
-  text-align: center;
-  text-decoration: none;
-  transition: color .1s;
-}
-
-
-
-/* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
-}
 
 
 
@@ -229,9 +128,12 @@ Media query
   /*  Tablet styling */
 
  @media screen and (max-width: 768px) {
-  body {
 
-    }
+    .top_logo {
+
+        }
+
+    
 
 
 }
