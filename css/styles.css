@@ -13,7 +13,7 @@ h1 {
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 12em;
+  font-size: 2em;
   float: center;
 }
 
@@ -71,6 +71,14 @@ header.column.row img {
   max-width: 278px;
 }
 
+header#corner img{
+position: absolute;
+text-align: left;
+}
+
+.hide {
+  display: none !important;
+}
 
 
 
