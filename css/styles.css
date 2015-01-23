@@ -9,7 +9,8 @@ body {
   background: url("../img/crossword.png");
   font size: 100%;
   text-align: center;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 
@@ -26,6 +27,11 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   float: center;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 
@@ -48,11 +54,13 @@ nav a:hover {
   border-radius: 2em;
 }
 
-a {
+a,
+footer p {
   color: #3FBAB9;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 
 
 /*========
@@ -114,12 +122,6 @@ img {
 Resume Stying
 ============*/
 
-a > img {
-  max-width: 2.5em;
-  height: 3em;
-  margin: .6em;
-  opacity: .8;
-}
 
 header.small-logo {
   width: 30%;
