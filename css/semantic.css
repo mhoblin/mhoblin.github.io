@@ -10178,8 +10178,8 @@ i.flag.zimbabwe:before {
 
   .ui.stackable.grid > .row:first-child > .column:first-child,
   .ui.stackable.grid > .column:first-child {
-    margin-top: 0em !important;
-    padding-top: 0em !important;
+    margin-top: 0em; /*--important*/
+    padding-top: 0em; /*--!important*/
   }
 
   .ui.stackable.divided.grid > .row:first-child > .column:first-child,
