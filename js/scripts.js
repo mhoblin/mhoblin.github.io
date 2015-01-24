@@ -2,7 +2,7 @@
 
 
 
-$('i').addClass('big icon');
+$('a i').addClass('big icon');
 
 $(window).resize(function(){
 	if ($(window).width() <= 800){
@@ -29,4 +29,9 @@ $(document).ready(function() {
 	});
 });
 
+$('.ui.accordion')
+  .accordion()
+;
+
+$('.ui.accordion').accordion('refresh');
 
