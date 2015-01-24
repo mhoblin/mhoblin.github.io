@@ -1,7 +1,5 @@
 
 
-
-
 $('i').addClass('big icon');
 
 $(window).resize(function(){
@@ -29,7 +27,4 @@ $(document).ready(function() {
 	});
 });
 
-$(".fancybox").fancybox({
-
-});
 

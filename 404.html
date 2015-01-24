@@ -9,37 +9,52 @@
 
   <title>Error 404</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:900' rel='stylesheet' type='text/css'>
+<!--fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:900' rel='stylesheet' type='text/css'>
 
-<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
+<!--stylesheets-->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/semantic.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+
+<!--body-->
 </head>
 
 <body>
 
-  <!--your custom 404-->
-  
-  <h1>Uh oh...</h1>
-  <img src="img/hedgehog-01.png"/>
-  <h1>something went wrong</h1>
-  <p>Give these links a try</p>
-      <section>
+  <div class="ui centered grid">
 
-    <nav>
-      <a href="http://mhoblin.github.io/index.html" alt="my style tile">Home</a>
-      <a href="http://mhoblin.github.io/portfolio.html"alt="my portfolio">Portfolio</a>
-      <a href="http://mhoblin.github.io/resume.html" alt="my resume">Resume</a>
+    <!--your custom 404-->
+    <div class="ten wide center aligned column">
+      <h1>Uh oh...</h1>
+      <img src="img/hedgehog-01.png"/>
+    </div>
 
-    </nav>
+    <div class="ten wide center aligned column">
+      <h1>something went wrong</h1>
+      <p>Give these links a try</p>
+    </div>
 
-    </section>
-  <p>or just click the back button, whichever suits you</p>
+      <section class="center aligned row">
+
+        <nav class="sixteen wide column">
+          <a href="index.html" alt="home">Home</a>
+          <a href="resume.html" alt="my resume">Resume</a>
+          <a href="portfolio.html"alt="my portfolio">Portfolio</a>  
+        </nav>
+
+      </section>
+
+      <div class="ten wide center aligned column">
+          <p>or just click the back button, whichever suits you</p>
+      </div>
+
+  </div>
   
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/semantic.js"></script>

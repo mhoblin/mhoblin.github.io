@@ -117,7 +117,9 @@ Gallery Stying
   right: -50px;
 }
 
-
+.ui.stackable.grid > .row:first-child > .column:first-child, .ui.stackable.grid > .column:first-child {
+  
+}
 
 
 
