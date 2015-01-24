@@ -12,7 +12,8 @@
  <link rel="icon" href="img/favicon.ico">	
  
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/semantic.css">	
+  <link rel="stylesheet" type="text/css" href="css/semantic.css">
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />	
   
   <!-- fonts -->
 
@@ -31,14 +32,14 @@
 	<div class="ui centered grid">
 
 		<header id="corner" class="left aligned six column row">
-			<img src="img/logo.png" alt="my Logo" class="left floated column corner">
+			<img src="img/logo.png" alt="my Logo" class="left floated column corner hide">
 		</header>	
 
 
 		<header id="large" class="center aligned ten column row">
-			<img src="img/logo.png" alt="my Logo" class="ten wide column">
+			<img src="img/logo.png" alt="my Logo" class="ten wide column hide">
 		</header>		
-
+<!-- nav -->
 		<section class="center aligned row">
 
 		<nav class="sixteen wide column">
@@ -49,55 +50,53 @@
 
 		</section>
 
-		<div class="gallery items-5">
 
-			  <div id="item-1" class="control-operator"></div>
-			  <div id="item-2" class="control-operator"></div>
-			  <div id="item-3" class="control-operator"></div>
-			  <div id="item-4" class="control-operator"></div>
-			  <div id="item-5" class="control-operator"></div>
+<!--my work-->
 
-			  <!-- Images fade in and out & restacked w/ z-index -->
+		<div class="ten wide center aligned column">
+			<h1>My Work</h1>
+		</div>
 
-			  <figure class="item">
-			    <img src="img/bird.jpg" alt="">
-			  </figure>
+<!-- the stuff -->
 
-			  <figure class="item">
-			    <img src="img/chair.jpg" alt="">
-			  </figure>
+		<div class="gallery fourteen wide column">
 
-			  <figure class="item">
-			    <img src="img/drawing.jpg" alt="">
-			  </figure>
+			<div class="ui center aligned five column stackable grid">
 
-			  <figure class="item">
-			    <img src="img/flower.jpg" alt="">
-			  </figure>
+				<div id="piece" class="left floated column">  
+				  <a class="fancybox" rel="gallery1" href="img/portfolio/bird.jpg" title="title">
+				    <img src="img/portfolio/bird-thumb.jpg" alt="" class="fluid image">
+				  </a>
+				</div>
 
-			  <figure class="item">
-			  	<img src="img/hair.jpg" alt="">
-			  </figure>
+				<div id="piece" class="left floated column">
+				  <a class="fancybox" rel="gallery1" href="img/portfolio/chair.jpg" title="title">
+				    <img src="img/portfolio/chair-thumb.jpg" alt="" class="fluid image">
+				  </a>
+				</div>
 
-			  <!-- Jump Links to each image -->
-			  <div class="controls">
-			    <a href="#item-1" class="control-button">
-			    	<img src="img/bird-thumb.jpg" alt="">
-			    </a>
-			    <a href="#item-2" class="control-button">
-			    	<img src="img/chair-thumb.jpg" alt="">
-			    </a>
-			    <a href="#item-3" class="control-button">
-					<img src="img/drawing-thumb.jpg" alt="">
-			    </a>
-			    <a href="#item-4" class="control-button">
-					<img src="img/flower-thumb.jpg" alt="">
-			    </a>
-			    <a href="#item-5" class="control-button">
-					<img src="img/hair-thumb.jpg" alt="">
-			    </a>
-			  </div>
+				<div id="piece" class="left floated column">
+				  <a class="fancybox" rel="gallery1" href="img/portfolio/drawing.jpg" title="title">
+				    <img src="img/portfolio/drawing-thumb.jpg" alt="" class="fluid image">
+				  </a>
+				</div>
+
+				<div id="piece" class="left floated column">
+				  <a class="fancybox" rel="gallery1" href="img/portfolio/flower.jpg" title="title">
+				    <img src="img/portfolio/flower-thumb.jpg" alt="" class="fluid image">
+				  </a>
+				</div>
+
+				<div id="piece" class="left floated column">
+				  <a class="fancybox" rel="gallery1" href="img/portfolio/hair.jpg" title="title">
+				  	<img src="img/portfolio/hair-thumb.jpg" alt="" class="fluid image">
+				  </a>
+				</div>
+
+
+
 			</div>
+		</div>
 
 		<!-- Footer -->
 
@@ -120,10 +119,9 @@
 
 
 
-	</div>
-
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/semantic.js"></script>
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
   <script src="js/scripts.js"></script>
 	
   

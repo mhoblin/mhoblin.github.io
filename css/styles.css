@@ -79,6 +79,7 @@ header.column.row img {
 header#corner img{
 position: absolute;
 text-align: left;
+max-width: 151px;
 }
 
 .hide {
@@ -99,6 +100,13 @@ header.small-logo {
   left: 0;
 }
 
+div.grid > div#piece.left.floated.column {
+
+  background-color: red;
+}
+
+
+
 
 
 
@@ -106,6 +114,10 @@ header.small-logo {
 Gallery Stying
 ==============*/
 
+.fancybox-close {
+  top: -50px;
+  right: -50px;
+}
 
 
 
