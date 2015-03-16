@@ -17,6 +17,7 @@ h1 {
   float: center;
 }
 
+
 h5 {
   font-weight: 400;
   font-size: 1.5em;
@@ -33,20 +34,17 @@ div header img[src*="logo"] {
 ul li {
   margin: 1em;
   text-align: left;
-
+ display: block;
 }
 
 ul li a {
   padding: .5em;
 }
 
-a:hover {
-    color: #646464;
-}
 
 ul li a:hover {
-  background-color: #646464;
   color: #FFF;
+
 
 }
 
@@ -58,6 +56,10 @@ ul {
 
 #nav {
   position: fixed;
+  height: 100%;
+  background-color: #646464;
+  color: #FFF;
+
 }
 
 a,
