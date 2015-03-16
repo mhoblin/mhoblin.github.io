@@ -30,23 +30,35 @@ div header img[src*="logo"] {
   /*background: red;*/
 }
 
-nav a {
-  margin: 1em .5em 2em .5em;
-  background-size: 2em 2em;
-  padding: .6em;
+ul li {
+  margin: 1em;
+  text-align: left;
+
+}
+
+ul li a {
+  padding: .5em;
 }
 
 a:hover {
     color: #646464;
 }
 
-nav a:hover {
+ul li a:hover {
   background-color: #646464;
-  border-radius: 2em;
   color: #FFF;
 
 }
 
+
+ul {
+  padding-top: 3em;
+  list-style-type: none;
+}
+
+#nav {
+  position: fixed;
+}
 
 a,
 footer {
