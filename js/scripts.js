@@ -1,7 +1,4 @@
 
-
-
-
 $('a i').addClass('big icon');
 
 $(window).resize(function(){
@@ -11,6 +8,15 @@ $(window).resize(function(){
 
 	else {$('header#corner img').removeClass('hide');
 		$('header#large img').addClass('hide')}
+});
+
+$(window).resize(function(){
+	if ($(window).width() <= 480){
+		$('ul.column').removeClass('center aligned');
+		$('ul.column').addClass('center aligned')}
+
+	else {$('ul.column').removeClass('center aligned');
+		$('ul.column').addClass('center aligned')}
 });
 
 $(document).ready(function() {

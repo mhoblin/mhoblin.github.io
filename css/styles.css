@@ -1,4 +1,4 @@
-/* Your Website Styles */
+/* Main text styles */
 
 body {
   background: url("../img/crossword.png");
@@ -23,6 +23,7 @@ h5 {
   font-size: 1.5em;
 }
 
+/* other styles */
 
 
 div header img[src*="logo"] {
@@ -30,6 +31,11 @@ div header img[src*="logo"] {
   max-width: 10em;
   /*background: red;*/
 }
+
+div.ui.centered.grid {
+  position: relative;
+}
+
 
 ul li {
   margin: 1em;
@@ -43,23 +49,23 @@ ul li a {
 
 
 ul li a:hover {
-  color: #FFF;
+ color: #000000;
 
 
 }
 
 
-ul {
+ul.column {
   padding-top: 3em;
   list-style-type: none;
+  position: relative;
 }
 
-#nav {
+section#nav {
   position: fixed;
   height: 100%;
-  background-color: #646464;
   color: #FFF;
-
+  z-index: 2;
 }
 
 a,
@@ -68,15 +74,22 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin: 2em;
+  margin-top: 2em;
+}
+
+footer div div a:hover {
+
+ color: #000000;
+
 }
 
 p a {
   margin: .25em;
 }
 
-section img {
+div#image img {
   max-width: 580px;
+  margin: auto;
 }
 
 .ui.image,
@@ -104,6 +117,10 @@ max-width: 151px;
   display: none !important;
 }
 
+div#body {
+  position: relative;
+  padding-left: 200px;
+}
 
 
 /*===========
@@ -190,6 +207,39 @@ Media query
     header.small-logo {
       position: center;
     }
+
+  ul li {
+    margin: auto;
+    text-align: center;
+   display: block;
+   float: left;
+  }
+
+  ul {
+    float: none;
+  }
+
+
+
+  section#nav {
+    position: relative;
+    float: none;
+}
+
+
+div#body {
+  position: relative;
+  padding-left: 5em;
+}
+div#body div,
+div#body div img{
+  padding-left: 2em;
+}
+
+div#body div h5 {
+  text-align: center;
+}
+
 
 
 }
