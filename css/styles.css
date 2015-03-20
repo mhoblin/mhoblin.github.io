@@ -50,8 +50,6 @@ ul li a {
 
 ul li a:hover {
  color: #000000;
-
-
 }
 
 
@@ -63,8 +61,6 @@ ul.column {
 
 section#nav {
   position: fixed;
-  height: 100%;
-  color: #FFF;
   z-index: 2;
 }
 
@@ -211,18 +207,23 @@ Media query
   ul li {
     margin: auto;
     text-align: center;
-   display: block;
-   float: left;
-  }
-
-  ul {
-    float: none;
+    float: left;
   }
 
 
+  section#nav.row {
+    background-color: grey;
+    width: 120% !important;
+}
 
-  section#nav {
-    position: relative;
+ul.column {
+  width: 100%;
+  margin: 5em;
+  padding-top: 1em;
+}
+
+ul li a:hover {
+ color: #FFF;
 }
 
 
@@ -230,9 +231,14 @@ div#body {
   position: relative;
   padding-left: 5em;
 }
+
 div#body div,
 div#body div img{
   padding-left: 2em;
+}
+
+div#body > div:first-of-type {
+  padding-top: 5em;
 }
 
 div#body div h5 {
