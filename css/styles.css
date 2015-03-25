@@ -152,8 +152,9 @@ Gallery Stying
   
 }
 
-
-
+img.fluid.image {
+  width: 100%;
+}
 
 /*==========
 Media query
