@@ -41,3 +41,12 @@ $('.ui.accordion')
 
 $('.ui.accordion').accordion('refresh');
 
+var $container = $('#container');
+// initialize
+$container.masonry({
+  columnWidth: 200,
+  itemSelector: '.item'
+});
+
+
+

@@ -73,6 +73,10 @@ footer {
   margin-top: 2em;
 }
 
+footer div div {
+  height: 25px;
+}
+
 footer div div a:hover {
 
  color: #000000;
@@ -152,9 +156,21 @@ Gallery Stying
   
 }
 
-img.fluid.image {
+
+.item { 
+  width: 100%; 
+}
+
+
+.item a img {
   width: 100%;
 }
+
+.item.w2 { 
+  width: 50%; 
+}
+
+
 
 /*==========
 Media query
@@ -233,9 +249,13 @@ div#body {
   padding-left: 5em;
 }
 
-div#body div,
-div#body div img{
+div#body:not(.portfolio) div,
+div#body:not(.portfolio) div img{
   padding-left: 2em;
+}
+
+div#body.portfolio div.gallery  {
+  padding-left: 4em;
 }
 
 div#body > div:first-of-type {
