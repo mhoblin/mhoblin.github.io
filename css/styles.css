@@ -239,9 +239,14 @@ ul.column {
   padding-top: 1em;
 }
 
-ul li a:hover {
+ul li a{
  color: #FFF;
 }
+
+ul li a:hover {
+ color: #3FBAB9;
+}
+
 
 
 div#body {
@@ -266,6 +271,9 @@ div#body div h5 {
   text-align: center;
 }
 
+html body div div#body.ui.grid div.fifteen.wide.center.aligned.column:first-of-type {
+  padding-left: 4em !important;
+}
 
 
 }
